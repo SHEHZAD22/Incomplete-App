@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:layout_marginBottom="5dp"
+    android:background="@color/gray"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/imageLayout"
+        android:layout_width="wrap_content"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/carImage"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:contentDescription="car image"
+            android:scaleType="centerCrop" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/onImageText"-->
+<!--            style="@style/TextAppearance.Material3.LabelLarge"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:text="Car Image" />-->
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/carMakeText"
+        style="@style/TextAppearance.Material3.LabelMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageLayout"
+        android:paddingLeft="10dp"
+        android:text="Car Make"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/carModelText"
+        style="@style/TextAppearance.Material3.LabelMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/carMakeText"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/imageLayout"
+        android:paddingLeft="10dp"
+        android:text="Car Model"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/addCarImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/imageLayout"
+        android:backgroundTint="#3F9AE3"
+        android:padding="10dp"
+        android:text="Add Car Image"
+        android:textAllCaps="false"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/deleteCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/addCarImage"
+        android:text="Delete Car"
+        android:textAllCaps="false"
+        android:textSize="10sp" />
+
+
+</RelativeLayout>
+
